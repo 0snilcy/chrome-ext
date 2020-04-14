@@ -1,0 +1,27 @@
+{
+  "name": "chrome-ext",
+  "version": "1.0.0",
+  "license": "MIT",
+  "dependencies": {
+    "copy-webpack-plugin": "^5.1.1",
+    "generate-json-webpack-plugin": "^0.3.1",
+    "ts-loader": "^6.2.2",
+    "typescript": "^3.8.3",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "@types/chrome": "^0.0.104",
+    "@typescript-eslint/eslint-plugin": "^2.27.0",
+    "@typescript-eslint/parser": "^2.27.0",
+    "babel-loader": "^8.1.0",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.1"
+  },
+  "scripts": {
+    "build": "rm -rf ./build && webpack",
+    "dev": "webpack --watch"
+  }
+}
